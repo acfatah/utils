@@ -1,0 +1,33 @@
+{
+  "name": "@acfatah/utils",
+  "version": "0.0.1",
+  "description": "A collection of ES6 or Javascript utility functions.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vitest",
+    "test": "npm run lint && vitest run",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write .",
+    "coverage": "npm run lint && vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acfatah/utils.git"
+  },
+  "keywords": [],
+  "author": "Achmad F. Ibrahim <acfatah@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acfatah/utils/issues"
+  },
+  "homepage": "https://github.com/acfatah/utils#readme",
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.10.0",
+    "@vitest/coverage-istanbul": "^1.4.0",
+    "eslint": "^8.57.0",
+    "nyc": "^15.1.0",
+    "prettier": "^3.2.5",
+    "vitest": "^1.4.0"
+  }
+}
