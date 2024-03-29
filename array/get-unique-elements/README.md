@@ -15,5 +15,5 @@ Accept one or more arrays.
 ## One Liner Snippet
 
 ```javascript
-(...arr) => [...new Set([].concat(...arr))]
+const getUniqueElements = (...arr) => [...new Set([].concat(...arr))]
 ```
