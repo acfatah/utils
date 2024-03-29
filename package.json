@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vitest",
     "test": "npm run lint && vitest run",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "lint": "eslint --fix .",
     "format": "prettier --write .",
     "coverage": "npm run lint && vitest run --coverage"
   },
@@ -26,8 +26,10 @@
     "@rushstack/eslint-patch": "^1.10.0",
     "@vitest/coverage-istanbul": "^1.4.0",
     "eslint": "^8.57.0",
+    "lint-staged": "^15.2.2",
     "nyc": "^15.1.0",
     "prettier": "^3.2.5",
+    "simple-git-hooks": "^2.11.1",
     "vitest": "^1.4.0"
   }
 }
