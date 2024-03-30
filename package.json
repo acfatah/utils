@@ -5,11 +5,18 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
+    "build": "vite build",
+    "check": "npm run check:format && npm run check:lint",
+    "check:format": "prettier --check --ignore-path .gitignore --log-level error .",
+    "check:lint": "eslint .",
+    "clean": "rimraf .nyc_output coverage dist",
     "dev": "vitest",
-    "test": "npm run lint && vitest run",
-    "lint": "eslint --fix .",
-    "format": "prettier --write .",
-    "coverage": "npm run lint && vitest run --coverage"
+    "fix": "npm run fix:format && npm run fix:lint",
+    "fix:format": "npm run check:format --write",
+    "fix:lint": "npm run check:lint --fix --quiet",
+    "test": "npm run test:unit:coverage",
+    "test:unit": "vitest run",
+    "test:unit:coverage": "vitest run --coverage"
   },
   "repository": {
     "type": "git",

@@ -18,7 +18,7 @@ jobs:
           pkg-manager: npm
       - run:
           name: Run tests with coverage
-          command: npm run coverage
+          command: npm run test:unit:coverage
       - run:
           name: Setup Code Climate test-reporter
           command: |
