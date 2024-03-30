@@ -12,8 +12,8 @@
     "clean": "rimraf .nyc_output coverage dist",
     "dev": "vitest",
     "fix": "npm run fix:format && npm run fix:lint",
-    "fix:format": "npm run check:format --write",
-    "fix:lint": "npm run check:lint --fix --quiet",
+    "fix:format": "prettier --check --write --ignore-path .gitignore .",
+    "fix:lint": "eslint --fix --quiet .",
     "test": "npm run test:unit:coverage",
     "test:unit": "vitest run",
     "test:unit:coverage": "vitest run --coverage"
