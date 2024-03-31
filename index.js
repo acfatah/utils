@@ -1,5 +1,6 @@
 export * from './array/get-unique-elements'
 export * from './array/move-element'
+export * from './object/is-keys-iterable'
 export * from './object/transform-keys'
 export * from './string/ensure-string'
 export * from './string/generate-random-string'
