@@ -2,7 +2,7 @@
   "name": "@acfatah/utils",
   "version": "0.0.1",
   "description": "A collection of ES6 or Javascript utility functions.",
-  "main": "src/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "vite build",
