@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/acfatah/utils#readme",
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.10.0",
+    "@rushstack/eslint-patch": "^1.10.1",
     "@vitest/coverage-istanbul": "^1.4.0",
     "eslint": "^8.57.0",
     "lint-staged": "^15.2.2",
