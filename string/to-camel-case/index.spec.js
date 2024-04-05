@@ -5,8 +5,10 @@ describe('toCamelCase', () => {
   const expected = 'firstName'
   const testCases = [
     { expected: '', actual: null },
-    { expected, actual: 'first-name' },
+    { expected, actual: 'FirstName' },
     { expected, actual: 'first_name' },
+    { expected, actual: 'FIRST_NAME' },
+    { expected, actual: 'first-name' },
     { expected, actual: 'first name' },
     { expected, actual: 'First Name' }
   ]
