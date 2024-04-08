@@ -16,7 +16,6 @@ module.exports = {
   ignorePatterns: [
     'package*.json',
     '.gitignore',
-    '.litstagedrc.json',
     '.simple-git-hooks.json',
     'README.md'
   ],
