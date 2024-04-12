@@ -31,12 +31,12 @@
   "homepage": "https://github.com/acfatah/utils#readme",
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.10.2",
-    "@vitest/coverage-istanbul": "^1.4.0",
+    "@vitest/coverage-istanbul": "^1.5.0",
     "eslint": "^8.57.0",
     "lint-staged": "^15.2.2",
     "nyc": "^15.1.0",
     "prettier": "^3.2.5",
     "simple-git-hooks": "^2.11.1",
-    "vitest": "^1.4.0"
+    "vitest": "^1.5.0"
   }
 }
