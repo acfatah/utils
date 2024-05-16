@@ -7,21 +7,16 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    node: true
+    node: true,
   },
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
-  ignorePatterns: [
-    'package*.json',
-    '.gitignore',
-    '.simple-git-hooks.json',
-    'README.md'
-  ],
+  ignorePatterns: ['package*.json', '.gitignore', '.simple-git-hooks.json', 'README.md'],
   overrides: [
     {
-      files: ['.vue', '.js', '.jsx', '.cjs', '.mjs']
-    }
-  ]
+      files: ['.vue', '.js', '.jsx', '.cjs', '.mjs'],
+    },
+  ],
 }
