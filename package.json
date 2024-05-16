@@ -5,21 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "check": "npm run check:format && npm run check:lint",
-    "check:format": "prettier --check --ignore-path .gitignore .",
-    "check:lint": "eslint .",
-    "precommit": "npm run precommit:format && npm run precommit:lint",
-    "precommit:format": "git diff --name-only --diff-filter=d --cached HEAD | xargs prettier --write",
-    "precommit:lint": "git diff --name-only --diff-filter=d --cached HEAD | xargs eslint",
-    "clean": "rimraf .nyc_output coverage dist",
     "dev": "vitest",
-    "fix": "npm run fix:format && npm run fix:lint",
-    "fix:format": "prettier --check --write --ignore-path .gitignore .",
-    "fix:lint": "eslint --fix --quiet .",
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "precommit": "npm run lint:fix",
+    "clean": "rimraf .nyc_output coverage dist",
     "test": "npm run test:unit:coverage",
     "test:unit": "vitest run",
-    "test:unit:coverage": "vitest run --coverage"
+    "test:unit:coverage": "vitest run --coverage",
+    "update": "npx ncu -u --target semver && npm install"
   },
   "repository": {
     "type": "git",
@@ -33,13 +28,15 @@
   },
   "homepage": "https://github.com/acfatah/utils#readme",
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.10.0",
-    "@vitest/coverage-istanbul": "^1.4.0",
+    "@antfu/eslint-config": "^2.18.0",
+    "@rushstack/eslint-patch": "^1.10.2",
+    "@vitest/coverage-istanbul": "^1.6.0",
     "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.1",
     "nyc": "^15.1.0",
     "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
+    "rimraf": "^5.0.7",
     "simple-git-hooks": "^2.11.1",
-    "vitest": "^1.4.0"
+    "vitest": "^1.6.0"
   }
 }
