@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { getUniqueElements } from '.'
 
 describe('getUniqueElements', () => {
@@ -8,8 +8,7 @@ describe('getUniqueElements', () => {
     const expectedArray = [1, 2, 3, 4, 5, 6, 7]
     const result = getUniqueElements(array1, array2)
 
-    for (let i = 0; i < result.length; i++) {
+    for (let i = 0; i < result.length; i++)
       expect(result[i]).toEqual(expectedArray[i])
-    }
   })
 })

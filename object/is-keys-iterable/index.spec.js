@@ -1,10 +1,10 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { isKeysIterable } from '.'
 
 describe('isKeysIterable', () => {
   const iterableInputMaps = [
     { input: 'Array', value: [], expected: true },
-    { input: 'Object', value: {}, expected: true }
+    { input: 'Object', value: {}, expected: true },
   ]
 
   iterableInputMaps.forEach(({ input, value, expected }) => {
@@ -21,7 +21,7 @@ describe('isKeysIterable', () => {
     { input: 'Map', value: new Map(), expected: false },
     { input: 'Set', value: new Set(), expected: false },
     { input: 'WeakMap', value: new WeakMap(), expected: false },
-    { input: 'WeakSet', value: new WeakSet(), expected: false }
+    { input: 'WeakSet', value: new WeakSet(), expected: false },
   ]
 
   nonIterableInputMaps.forEach(({ input, value, expected }) => {

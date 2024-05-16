@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { toKebabCase } from '.'
 
 describe('toKebabCase', () => {
@@ -12,7 +12,7 @@ describe('toKebabCase', () => {
     { expected, actual: 'first-name' },
     { expected, actual: 'first name' },
     { expected, actual: 'First Name' },
-    { expected: 'lorem-ipsum-dolor-sit-amet', actual: 'Lorem! Ipsum, % Dolor Sit amet.' }
+    { expected: 'lorem-ipsum-dolor-sit-amet', actual: 'Lorem! Ipsum, % Dolor Sit amet.' },
   ]
 
   testCases.forEach(({ expected, actual }) => {
@@ -29,7 +29,7 @@ describe('toKebabCase', () => {
     { type: 'set', value: new Set() },
     { type: 'boolean', value: true },
     { type: 'object', value: {} },
-    { type: 'function', value: () => {} }
+    { type: 'function', value: () => {} },
   ]
 
   notAStringValues.forEach(({ type, value }) => {

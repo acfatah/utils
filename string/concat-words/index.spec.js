@@ -1,11 +1,11 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { concatWords } from '.'
 
 describe('concatWords', () => {
   const withoutSeparatorInputMaps = [
     { input: null, expected: '' },
     { input: 'lorem ipsum', expected: 'lorem_ipsum' },
-    { input: 'lorem123!@# Ipsum', expected: 'lorem123_Ipsum' }
+    { input: 'lorem123!@# Ipsum', expected: 'lorem123_Ipsum' },
   ]
 
   withoutSeparatorInputMaps.forEach(({ input, expected }) => {
@@ -22,12 +22,12 @@ describe('concatWords', () => {
     {
       input: 'Lorem ipsum dolor sit amet.',
       separator: '-',
-      expected: 'Lorem-ipsum-dolor-sit-amet'
+      expected: 'Lorem-ipsum-dolor-sit-amet',
     },
     {
       input: 'Lorem ipsum dolor sit amet.',
       separator: ', ',
-      expected: 'Lorem, ipsum, dolor, sit, amet'
+      expected: 'Lorem, ipsum, dolor, sit, amet',
     },
     { input: 'FOO BAR', separator: '', expected: 'FOOBAR' },
     { input: 'FOO BAR', separator: '-', expected: 'FOO-BAR' },
@@ -40,7 +40,7 @@ describe('concatWords', () => {
     { input: '$lorem123 !IpsumDolor -sit', separator: '-', expected: 'lorem123-IpsumDolor-sit' },
     { input: 'lorem ipsum', separator: '$$', expected: 'lorem$$ipsum' },
     { input: 'lorem ipsum', separator: '++', expected: 'lorem++ipsum' },
-    { input: 'lorem ipsum', separator: '--', expected: 'lorem--ipsum' }
+    { input: 'lorem ipsum', separator: '--', expected: 'lorem--ipsum' },
   ]
 
   inputMaps.forEach(({ input, separator, expected }) => {

@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { capitalize } from '.'
 
 describe('capitalize', () => {
@@ -26,7 +26,7 @@ describe('invalid strings', () => {
     { type: 'set', value: new Set() },
     { type: 'boolean', value: true },
     { type: 'object', value: {} },
-    { type: 'function', value: () => {} }
+    { type: 'function', value: () => {} },
   ]
 
   notAStringValues.forEach(({ type, value }) => {

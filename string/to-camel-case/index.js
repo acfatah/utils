@@ -1,7 +1,7 @@
 import { ensureString } from '../ensure-string/index.js'
 import { addSpaceBeforeCapitalLetter } from '../add-space-before-capital-letter/index.js'
 
-export const toCamelCase = string => {
+export function toCamelCase(string) {
   let result = ensureString(string)
   result = addSpaceBeforeCapitalLetter(result)
     .toLowerCase()

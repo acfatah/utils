@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { toConstantCase } from '.'
 
 describe('toConstantCase', () => {
@@ -9,7 +9,7 @@ describe('toConstantCase', () => {
     { expectedValue, actualValue: 'first_name' },
     { expectedValue, actualValue: 'firstName' },
     { expectedValue, actualValue: 'first name' },
-    { expectedValue, actualValue: 'First Name' }
+    { expectedValue, actualValue: 'First Name' },
   ]
 
   testCases.forEach(({ expectedValue, actualValue }) => {
@@ -26,7 +26,7 @@ describe('toConstantCase', () => {
     { type: 'set', value: new Set() },
     { type: 'boolean', value: true },
     { type: 'object', value: {} },
-    { type: 'function', value: () => {} }
+    { type: 'function', value: () => {} },
   ]
 
   notAStringValues.forEach(({ type, value }) => {

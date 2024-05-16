@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { deepPascalCaseKeys } from '.'
 
 describe('deepPascalCaseKeys', () => {
@@ -7,14 +7,14 @@ describe('deepPascalCaseKeys', () => {
     const expectedObject = {
       FullName: 'Foo Bar',
       123: '123',
-      456: '456', // eslint-disable-line quote-props
+      456: '456',
       [aSymbol]: 'a symbol',
     }
 
     const actualObject = {
       fullName: 'Foo Bar',
       123: '123',
-      456: '456', // eslint-disable-line quote-props
+      456: '456',
       [aSymbol]: 'a symbol',
     }
 

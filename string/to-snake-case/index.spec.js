@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { toSnakeCase } from '.'
 
 describe('toSnakeCase', () => {
@@ -10,7 +10,7 @@ describe('toSnakeCase', () => {
     { expected, actual: 'FIRST_NAME' },
     { expected, actual: 'first-name' },
     { expected, actual: 'first name' },
-    { expected, actual: 'First Name' }
+    { expected, actual: 'First Name' },
   ]
 
   testCases.forEach(({ expected, actual }) => {
@@ -27,7 +27,7 @@ describe('toSnakeCase', () => {
     { type: 'set', value: new Set() },
     { type: 'boolean', value: true },
     { type: 'object', value: {} },
-    { type: 'function', value: () => {} }
+    { type: 'function', value: () => {} },
   ]
 
   notAStringValues.forEach(({ type, value }) => {
