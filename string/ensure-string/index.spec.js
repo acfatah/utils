@@ -2,6 +2,12 @@ import { describe, it, expect } from 'vitest'
 import { ensureString } from '.'
 
 describe('ensureString', () => {
+  it('should return string as it is', () => {
+    const result = ensureString('a string')
+
+    expect(result).toBe('a string')
+  })
+
   it('should turn null into an empty string', () => {
     const result = ensureString(null)
 
