@@ -22,7 +22,7 @@ describe('ensureString', () => {
     { type: 'set', value: new Set() },
     { type: 'boolean', value: true },
     { type: 'object', value: {} },
-    { type: 'function', value: () => {} }
+    { type: 'function', value: () => {} },
   ]
 
   notAStringValues.forEach(({ type, value }) => {
