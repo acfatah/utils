@@ -1,7 +1,7 @@
 {
   "name": "@acfatah/utils",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A collection of ES6 or Javascript utility functions.",
   "author": "Achmad F. Ibrahim <acfatah@gmail.com>",
   "license": "MIT",
@@ -25,7 +25,8 @@
     "test": "npm run test:unit:coverage",
     "test:unit": "vitest run",
     "test:unit:coverage": "vitest run --coverage",
-    "update": "npx ncu -u --target semver && npm install"
+    "update": "npx ncu -u --target semver && npm install",
+    "release": "release-it"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.18.0",
@@ -35,6 +36,7 @@
     "eslint-plugin-format": "^0.1.1",
     "nyc": "^15.1.0",
     "prettier": "^3.2.5",
+    "release-it": "^17.2.1",
     "rimraf": "^5.0.7",
     "simple-git-hooks": "^2.11.1",
     "vitest": "^1.6.0"
