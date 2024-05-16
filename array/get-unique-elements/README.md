@@ -12,7 +12,11 @@ Type: `array`
 
 Accept one or more arrays.
 
-## One Liner Snippet
+### return
+
+Type: `array`
+
+## One-liner Snippet
 
 ```javascript
 const getUniqueElements = (...arr) => [...new Set([].concat(...arr))]

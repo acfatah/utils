@@ -1,9 +1,9 @@
-export const generateRandomString = ({
+export function generateRandomString({
   length = 32,
   characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789',
   symbols = '-_',
-  includeSymbols = false
-} = {}) => {
+  includeSymbols = false,
+} = {}) {
   let result = ''
 
   // Combine characters and symbols if includeSymbols is true

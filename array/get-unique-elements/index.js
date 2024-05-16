@@ -1,4 +1,4 @@
-export const getUniqueElements = (...arr) => {
+export function getUniqueElements(...arr) {
   const concatenatedArr = [].concat(...arr)
   const uniqueSet = new Set(concatenatedArr)
   const uniqueElements = [...uniqueSet]

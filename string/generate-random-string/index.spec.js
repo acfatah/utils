@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { generateRandomString } from '.'
 
 describe('generateRandomString', () => {
@@ -11,8 +11,7 @@ describe('generateRandomString', () => {
   })
 
   it('should generates a string with specified characters', () => {
-    for (const char of str) {
+    for (const char of str)
       expect(characters).toContain(char)
-    }
   })
 })

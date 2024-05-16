@@ -5,7 +5,7 @@ export default defineConfig({
     include: ['**/*.spec.js'],
     coverage: {
       provider: 'istanbul',
-      reporter: ['text', 'lcov']
-    }
-  }
+      reporter: ['text', 'lcov'],
+    },
+  },
 })

@@ -1,42 +1,44 @@
 {
   "name": "@acfatah/utils",
-  "version": "0.0.1",
-  "description": "A collection of ES6 or Javascript utility functions.",
-  "main": "src/index.js",
   "type": "module",
-  "scripts": {
-    "build": "vite build",
-    "check": "npm run check:format && npm run check:lint",
-    "check:format": "prettier --check --ignore-path .gitignore .",
-    "check:lint": "eslint .",
-    "clean": "rimraf .nyc_output coverage dist",
-    "dev": "vitest",
-    "fix": "npm run fix:format && npm run fix:lint",
-    "fix:format": "npm run check:format --write",
-    "fix:lint": "npm run check:lint --fix --quiet",
-    "test": "npm run test:unit:coverage",
-    "test:unit": "vitest run",
-    "test:unit:coverage": "vitest run --coverage"
-  },
+  "version": "1.0.0",
+  "description": "A collection of ES6 or Javascript utility functions.",
+  "author": "Achmad F. Ibrahim <acfatah@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/acfatah/utils#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/acfatah/utils.git"
   },
-  "keywords": [],
-  "author": "Achmad F. Ibrahim <acfatah@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/acfatah/utils/issues"
   },
-  "homepage": "https://github.com/acfatah/utils#readme",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitest",
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "precommit": "npm run lint:fix",
+    "clean": "rimraf .nyc_output coverage dist",
+    "test": "npm run test:unit:coverage",
+    "test:unit": "vitest run",
+    "test:unit:coverage": "vitest run --coverage",
+    "update": "npx ncu -u --target semver && npm install",
+    "release": "release-it"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.18.0",
     "@rushstack/eslint-patch": "^1.10.2",
-    "@vitest/coverage-istanbul": "^1.5.0",
+    "@vitest/coverage-istanbul": "^1.6.0",
     "eslint": "^8.57.0",
-    "lint-staged": "^15.2.2",
+    "eslint-plugin-format": "^0.1.1",
     "nyc": "^15.1.0",
     "prettier": "^3.2.5",
+    "release-it": "^17.2.1",
+    "rimraf": "^5.0.7",
     "simple-git-hooks": "^2.11.1",
-    "vitest": "^1.5.0"
+    "vitest": "^1.6.0"
   }
 }

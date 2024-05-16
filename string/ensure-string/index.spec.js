@@ -1,7 +1,13 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { ensureString } from '.'
 
 describe('ensureString', () => {
+  it('should return string as it is', () => {
+    const result = ensureString('a string')
+
+    expect(result).toBe('a string')
+  })
+
   it('should turn null into an empty string', () => {
     const result = ensureString(null)
 
@@ -16,7 +22,7 @@ describe('ensureString', () => {
     { type: 'set', value: new Set() },
     { type: 'boolean', value: true },
     { type: 'object', value: {} },
-    { type: 'function', value: () => {} }
+    { type: 'function', value: () => {} },
   ]
 
   notAStringValues.forEach(({ type, value }) => {
