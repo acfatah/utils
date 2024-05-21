@@ -1,5 +1,6 @@
 export * from './array/get-unique-elements/index.js'
 export * from './array/move-element/index.js'
+export * from './common/index.js'
 export * from './object/is-keys-iterable/index.js'
 export * from './object/transform-keys/index.js'
 export * from './object/deep-camel-case-keys/index.js'
