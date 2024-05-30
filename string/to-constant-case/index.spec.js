@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { toConstantCase } from '.'
+import { toConstantCase } from '../../index.js'
 
 describe('toConstantCase', () => {
   const expectedValue = 'FIRST_NAME'

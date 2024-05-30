@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { addSpaceBeforeCapitalLetter } from '.'
+import { addSpaceBeforeCapitalLetter } from '../../index.js'
 
 describe('addSpaceBeforeCapitalLetter', () => {
   it('should add space before each capital letter in a string', () => {

@@ -1,5 +1,4 @@
-import { ensureString } from '../ensure-string/index.js'
-import { addSpaceBeforeCapitalLetter } from '../add-space-before-capital-letter/index.js'
+import { addSpaceBeforeCapitalLetter, ensureString } from '../../index.js'
 
 export function toCamelCase(string) {
   let result = ensureString(string)

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getUniqueElements } from '.'
+import { getUniqueElements } from '../../index.js'
 
 describe('getUniqueElements', () => {
   it('should return an array with unique elements', () => {

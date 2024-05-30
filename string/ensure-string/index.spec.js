@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ensureString } from '.'
+import { ensureString } from '../../index.js'
 
 describe('ensureString', () => {
   it('should return string as it is', () => {

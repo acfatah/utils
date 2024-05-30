@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { deepCamelCaseKeys } from '.'
+import { deepCamelCaseKeys } from '../../index.js'
 
 describe('deepCamelCaseKeys', () => {
   it('should convert object keys', () => {

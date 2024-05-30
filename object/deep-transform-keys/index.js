@@ -1,4 +1,4 @@
-import { isKeysIterable } from '../is-keys-iterable/index.js'
+import { isKeysIterable } from '../../index.js'
 
 function transformArrayKeys(transformer, array) {
   return array.map(value => deepTransformKeys(value, transformer))

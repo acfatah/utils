@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { capitalize } from '.'
+import { capitalize } from '../../index.js'
 
 describe('capitalize', () => {
   it('should return empty string on null', () => {

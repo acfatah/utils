@@ -1,4 +1,3 @@
-import { deepTransformKeys } from '../deep-transform-keys/index.js'
-import { toSnakeCase } from '../../string/to-snake-case/index.js'
+import { deepTransformKeys, toSnakeCase } from '../../index.js'
 
 export const deepSnakeCaseKeys = object => deepTransformKeys(object, toSnakeCase)

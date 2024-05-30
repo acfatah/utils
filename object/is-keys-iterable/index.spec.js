@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { isKeysIterable } from '.'
+import { isKeysIterable } from '../../index.js'
 
 describe('isKeysIterable', () => {
   const iterableInputMaps = [

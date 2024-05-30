@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { toPascalCase } from '.'
+import { toPascalCase } from '../../index.js'
 
 describe('toPascalCase', () => {
   const expected = 'FirstName'

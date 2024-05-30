@@ -1,4 +1,4 @@
-import { ensureString } from '../ensure-string/index.js'
+import { ensureString } from '../../index.js'
 
 const addSpaceBeforeCapitalLetter = string => string.replace(/\B([A-Z][a-z])/g, ` $1`)
 

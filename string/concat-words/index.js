@@ -1,4 +1,4 @@
-import { ensureString } from '../ensure-string/index.js'
+import { ensureString } from '../../index.js'
 
 const removeNonWordChars = input => input.replace(/[^a-z0-9]+/gi, ' ')
 const trimString = input => input.trim()

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { deepPascalCaseKeys } from '.'
+import { deepPascalCaseKeys } from '../../index.js'
 
 describe('deepPascalCaseKeys', () => {
   it('should convert object keys', () => {

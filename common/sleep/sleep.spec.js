@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { sleep } from '../index.js'
+import { sleep } from '../../index.js'
 
 describe('sleep function', () => {
   it('waits for the specified number of milliseconds', async () => {

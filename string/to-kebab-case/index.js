@@ -1,5 +1,4 @@
-import { splitWordsByCapitalLetter } from '../split-words-by-capital-letter'
-import { concatWords } from '../concat-words'
+import { concatWords, splitWordsByCapitalLetter } from '../../index.js'
 
 export function toKebabCase(string) {
   const result = splitWordsByCapitalLetter(string)

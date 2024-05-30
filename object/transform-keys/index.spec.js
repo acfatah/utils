@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { transformKeys } from '.'
+import { transformKeys } from '../../index.js'
 
 describe('transformKeys', () => {
   it('should transform keys of an object', () => {

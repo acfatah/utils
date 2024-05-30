@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { deepSnakeCaseKeys } from '.'
+import { deepSnakeCaseKeys } from '../../index.js'
 
 describe('deepSnakeCaseKeys', () => {
   it('should convert object keys', () => {

@@ -1,6 +1,4 @@
-import { ensureString } from '../ensure-string/index.js'
-import { concatWords } from '../concat-words/index.js'
-import { addSpaceBeforeCapitalLetter } from '../add-space-before-capital-letter/index.js'
+import { addSpaceBeforeCapitalLetter, concatWords, ensureString } from '../../index.js'
 
 export function toPascalCase(string) {
   let result = ensureString(string)

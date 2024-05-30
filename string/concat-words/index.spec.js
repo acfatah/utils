@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { concatWords } from '.'
+import { concatWords } from '../../index.js'
 
 describe('concatWords', () => {
   const withoutSeparatorInputMaps = [

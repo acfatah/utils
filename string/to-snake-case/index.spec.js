@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { toSnakeCase } from '.'
+import { toSnakeCase } from '../../index.js'
 
 describe('toSnakeCase', () => {
   const expected = 'first_name'

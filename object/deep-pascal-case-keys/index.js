@@ -1,4 +1,3 @@
-import { deepTransformKeys } from '../deep-transform-keys/index.js'
-import { toPascalCase } from '../../string/to-pascal-case/index.js'
+import { deepTransformKeys, toPascalCase } from '../../index.js'
 
 export const deepPascalCaseKeys = object => deepTransformKeys(object, toPascalCase)

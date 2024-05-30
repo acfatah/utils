@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { splitWordsByCapitalLetter } from '.'
+import { splitWordsByCapitalLetter } from '../../index.js'
 
 describe('splitWordsByCapitalLetter', () => {
   it('should add space before each capital letter in a string', () => {

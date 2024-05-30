@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { generateRandomString } from '.'
+import { generateRandomString } from '../../index.js'
 
 describe('generateRandomString', () => {
   const length = 12

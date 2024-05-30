@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { deepTransformKeys } from '.'
+import { deepTransformKeys } from '../../index.js'
 
 describe('deepTransformKeys', () => {
   it('should convert object keys', () => {

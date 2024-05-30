@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { moveElement } from '.'
+import { moveElement } from '../../index.js'
 
 describe('moveElement', () => {
   it('should move an element to the new index', () => {

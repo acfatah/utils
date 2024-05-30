@@ -1,4 +1,3 @@
-import { deepTransformKeys } from '../deep-transform-keys/index.js'
-import { toCamelCase } from '../../string/to-camel-case/index.js'
+import { deepTransformKeys, toCamelCase } from '../../index.js'
 
 export const deepCamelCaseKeys = object => deepTransformKeys(object, toCamelCase)
