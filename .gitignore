@@ -1,4 +1,16 @@
+# Logs
+*.log
+logs
+npm-debug.log*
+
 .nyc_output
+*.tmp
 coverage
 dist
 node_modules
+tmp
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
