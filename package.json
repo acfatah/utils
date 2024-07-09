@@ -1,7 +1,7 @@
 {
   "name": "@acfatah/utils",
   "type": "module",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": false,
   "description": "A collection of ES6 or Javascript utility functions.",
   "author": "Achmad F. Ibrahim <acfatah@gmail.com>",
