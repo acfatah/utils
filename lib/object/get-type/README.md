@@ -13,7 +13,7 @@ The function returns a string that represents the type of the argument. It can b
 - `string`
 - `symbol`
 - `bigint`
-- `object`
+- `Object`
 - `Array`
 - `ArrayBuffer`
 - `Blob`
