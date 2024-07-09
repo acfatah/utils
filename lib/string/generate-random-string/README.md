@@ -1,39 +1,26 @@
-# `generateRandomString`
+# `generateRandomString(option?: number | Object)`
 
-Generates a random string of specified length.
+Simple method to generate a random string of specified length or with customizable characters and length.
 
-## Usage
+## `option?: number | Object`
 
-`generateRondomString(options?)`
+If `option` is a number, it's the length of the generated string.
+If `option` is an object, it can have the following properties:
 
-### options
-
-Type: `object`
-
-#### `options.length`
+### `option.length`
 
 Type: `number`
 Default: 32
 
 The length of the generated string.
 
-#### `options.characters`
+### `option.characters`
 
 Type: `string`
 Default: `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`
 
 The set of characters to use for generating the string.
 
-#### `options.symbols`
+## `returns: string`
 
-Type: `string`
-Default: `-_`
-
-The set of symbols to include in the character set.
-
-#### `options.includeSymbols`
-
-Type: `boolean`
-Default: `false`
-
-Whether to include symbols in the character set.
+The generated random string.
