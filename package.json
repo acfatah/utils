@@ -26,6 +26,7 @@
     "test": "npm run test:unit:coverage",
     "test:unit": "vitest run",
     "test:unit:coverage": "vitest run --coverage",
+    "test:coverage": "npm run clean && npm run test:unit:coverage && npx http-server -p 8888 coverage/lcov-report",
     "update": "npm-check-updates --upgrade --silent --target semver && npm install --no-progress",
     "release": "release-it"
   },
