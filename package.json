@@ -30,15 +30,15 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.18.0",
-    "@rushstack/eslint-patch": "^1.10.2",
+    "@antfu/eslint-config": "^2.21.3",
+    "@rushstack/eslint-patch": "^1.10.3",
     "@vitest/coverage-istanbul": "^1.6.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-format": "^0.1.1",
+    "eslint-plugin-format": "^0.1.2",
     "nyc": "^15.1.0",
-    "prettier": "^3.2.5",
-    "release-it": "^17.2.1",
-    "rimraf": "^5.0.7",
+    "prettier": "^3.3.2",
+    "release-it": "^17.5.0",
+    "rimraf": "^5.0.9",
     "simple-git-hooks": "^2.11.1",
     "vitest": "^1.6.0"
   }
