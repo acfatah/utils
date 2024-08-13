@@ -1,6 +1,7 @@
 export * from './lib/array/get-unique-elements/index.js'
 export * from './lib/array/move-element/index.js'
 export * from './lib/common/column-to-index/index.js'
+export * from './lib/common/debounce/index.js'
 export * from './lib/common/index-to-column/index.js'
 export * from './lib/common/sleep/index.js'
 export * from './lib/object/is-keys-iterable/index.js'
